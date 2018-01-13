@@ -94,14 +94,14 @@ public class RefreshServlet extends HttpServlet {
 			//鍒嗗彂杞悜
 			if(t!=null){//濡傛灉鍙栧緱锛屽氨鎶妕瀵硅薄鏀惧埌session瀵硅薄 涓�
 				request.setAttribute("t",t);
-				request.getRequestDispatcher("/testrefresh.jsp").forward(request, response);
+				//request.getRequestDispatcher("/testrefresh.jsp").forward(request, response);
 			    /*SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 			    String s = sdf.format(sdf.parse("20170701 000002000"));*/
 				/*request.setAttribute("t","hello");
 				request.setAttribute("t","\'2017\'");*/
 				//request.getRequestDispatcher("/map.jsp").forward(request, response);
 				//request.getRequestDispatcher("/index.jsp").forward(request, response);
-				//request.getRequestDispatcher("/HL.jsp").forward(request, response);	
+				request.getRequestDispatcher("/HL.jsp").forward(request, response);	
 				//request.getRequestDispatcher("/area_hl.jsp").forward(request, response);
 			}else{
 				request.getRequestDispatcher("/refresh.jsp").forward(request, response);
